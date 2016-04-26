@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app="boilerplate">
+<head>
+	<title>Angular Boilerplate</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body ng-controller="globalCtrl">
+	<div class="authors">
+		<div id="author-header"><h2>Authors</h2></div>
+		<input id="author-search" placeholder="Search for Authors Here" type="text"></input>
+	</div>
+	<div class="main" ui-view></div>
+
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular.min.js'></script>
+	<script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.min.js'></script> 
+	<script type="text/javascript" src='js/app.js'></script>
+	<script type="text/javascript" src='js/views/mainCtrl.js'></script>
+	<script type="text/javascript" src='js/globalCtrl.js'></script>
+	<script type="text/javascript" src='js/services/quoteService.js'></script>
+	<script type="text/javascript" src="js/directives/mainDir.js"></script>
+</body>
+</html>

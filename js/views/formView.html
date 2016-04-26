@@ -1,0 +1,10 @@
+<form name="authorForm">Enter an author and a quote <br>
+		<input ng-model="author.firstName" type="text" placeholder="Author First Name">
+		<input ng-model="author.lastName" type="text" placeholder="Author Last Name"><br>
+		<textarea ng-model="author.quote.text" rows="10" cols="50" placeholder="Quote"></textarea><br>
+		Is this quote:
+		<input  ng-model="author.quote.type" type="radio" value="funny"> Funny?
+		<input  ng-model="author.quote.type" type="radio" value="romantic"> Romantic?
+		<input  ng-model="author.quote.type" type="radio" value="insulting"> Insulting?
+		<button type="submit" ng-click="submitQuote()">Submit</button>
+	</form>
